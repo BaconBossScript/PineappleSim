@@ -1,0 +1,411 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({
+    Name = "BaconBoss Hub | Pineapple Simulator 🍍",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "OrionTest"
+})
+
+local Tab = Window:MakeTab({
+    Name = "Main 🏠",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+    local TabTwo = Window:MakeTab({
+    Name = "Egg 🥚",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+    local TabThree = Window:MakeTab({
+    Name = "Teleport 🚪",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local TabFive = Window:MakeTab({
+    Name = "Unlock Zone(Free) 🤑",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local TabSix = Window:MakeTab({
+    Name = "Combat",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local TabFour = Window:MakeTab({
+    Name = "Misc 🎲",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+    
+    local Section = TabFour:AddSection({
+    Name = "Cre: BaconBossScript & tungnopro"
+})
+local Section = TabFour:AddSection({
+    Name = "discord.gg/7QtGeuzdGc"
+})
+
+local Section = Tab:AddSection({
+    Name = "BEST"
+})
+
+                
+Tab:AddToggle({
+    Name = "Best DNA",
+    Default = false,
+    Callback = function(Value)
+            _G.bestdna = Value
+        while _G.bestdna and wait() do
+        local args = {
+             [1] = "23_+1?+backp_4ck",
+    [2] = 27
+}
+
+game:GetService("ReplicatedStorage").Equipped:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+Tab:AddToggle({
+    Name = "Eat best pineapple",
+    Default = false,
+    Callback = function(Value)
+            _G.besteat = Value
+        while _G.besteat and wait() do
+local args = {
+    [1] = "_^,DA^=E=!KK<A)!?Q?A>SP-("
+}
+
+game:GetService("ReplicatedStorage").Give27:FireServer(unpack(args))
+wait(0)
+end
+    end
+})
+
+
+  local Section = Tab:AddSection({
+    Name = "Anti Afk - Click Once"
+})
+    Tab:AddButton({
+    Name = "Anti Afk",
+    Callback = function()
+wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by TungNoPro "
+_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
+            end
+        })
+
+
+
+
+
+local Section = TabTwo:AddSection({
+    Name = "Auto Hatch Fast"
+})
+    _G.autoHatch = true
+    _G.selectEgg = "Normal"
+
+    function autoHatch()
+        while _G.autoHatch == true do
+game:GetService("ReplicatedStorage").RemoteEvents.EggOpened:InvokeServer(_G.selectEgg, Single)
+
+            wait(0)
+        end
+    end
+TabTwo:AddToggle({
+Name = "Auto Hatch",
+    Default = false,
+    Callback = function(Value)
+                _G.autoHatch = Value
+                    autoHatch()
+                    end
+        })
+
+TabTwo:AddDropdown({
+	Name = "Choose Eggs",
+	Default = "Normal",
+	Options = {"Normal", "Candy", "Forest", "Volcano"},
+	Callback = function(Value)
+		_G.selectEgg = Value
+    print(_G.selectEgg)
+	end    
+})
+
+
+        local Section = TabFive:AddSection({
+    Name = "Unlock Zone(FREE)"
+})
+
+TabFive:AddToggle({
+    Name = "Candy",
+    Default = false,
+    Callback = function(Value)
+            _G.best1 = Value
+        while _G.best1 and wait() do
+       local args = {
+    [1] = "1j93je+3_+123?",
+    [2] = "CandyZone",
+    [3] = "Coins",
+    [4] = 0
+}
+
+game:GetService("ReplicatedStorage").DoorEvents.Buy:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+TabFive:AddToggle({
+    Name = "Snow",
+    Default = false,
+    Callback = function(Value)
+            _G.best12 = Value
+        while _G.best12 and wait() do
+       local args = {
+    [1] = "1j93je+3_+123?",
+    [2] = "SnowZone",
+    [3] = "Coins",
+    [4] = 0
+}
+
+game:GetService("ReplicatedStorage").DoorEvents.Buy:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+TabFive:AddToggle({
+    Name = "Desert",
+    Default = false,
+    Callback = function(Value)
+            _G.best13 = Value
+        while _G.best13 and wait() do
+       local args = {
+    [1] = "1j93je+3_+123?",
+    [2] = "DesertZone",
+    [3] = "Coins",
+    [4] = 0
+}
+
+game:GetService("ReplicatedStorage").DoorEvents.Buy:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+TabFive:AddToggle({
+    Name = "Volcano",
+    Default = false,
+    Callback = function(Value)
+            _G.best14 = Value
+        while _G.best14 and wait() do
+       local args = {
+    [1] = "1j93je+3_+123?",
+    [2] = "VolcanoZone",
+    [3] = "Coins",
+    [4] = 0
+}
+
+game:GetService("ReplicatedStorage").DoorEvents.Buy:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+TabFive:AddToggle({
+    Name = "Forest",
+    Default = false,
+    Callback = function(Value)
+            _G.best15 = Value
+        while _G.best15 and wait() do
+       local args = {
+    [1] = "1j93je+3_+123?",
+    [2] = "ForestZone",
+    [3] = "Coins",
+    [4] = 0
+}
+
+game:GetService("ReplicatedStorage").DoorEvents.Buy:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+TabFive:AddToggle({
+    Name = "Tech",
+    Default = false,
+    Callback = function(Value)
+            _G.best16 = Value
+        while _G.best16 and wait() do
+       local args = {
+    [1] = "1j93je+3_+123?",
+    [2] = "TechZone",
+    [3] = "Coins",
+    [4] = 0
+}
+
+game:GetService("ReplicatedStorage").DoorEvents.Buy:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+local Section = TabThree:AddSection({
+    Name = "Teleport"
+})
+
+   
+
+    getgenv().TTPlace = "string"
+    
+    
+    function Teleport(teleportPlace)
+            local player = game.Players.LocalPlayer
+            player.Character.HumanoidRootPart.CFrame = teleportPlace
+                
+    end
+
+   
+TabThree:AddDropdown({
+	Name = "Select Zone",
+	Default = "Candy",
+	Options = {"Candy", "Snow", "Desert", "Volcano", "Forest"},
+	Callback = function(Value)
+		getgenv().TPPlace = Value
+	end    
+})
+
+    TabThree:AddButton({
+            Name = "Teleport",
+            Callback = function(Value)
+                if getgenv().TPPlace == "Candy" then
+                    Teleport(game:GetService("Workspace").Doors.CandyZone.CFrame)
+                elseif getgenv().TPPlace == "Snow" then
+                    Teleport(game:GetService("Workspace").Doors.SnowZone.CFrame)
+                elseif getgenv().TPPlace == "Desert" then
+                    Teleport(game:GetService("Workspace").Doors.DesertZone.CFrame)
+                elseif getgenv().TPPlace == "Volcano" then
+                    Teleport(game:GetService("Workspace").Doors.DesertZone.CFrame)
+                elseif getgenv().TPPlace == "Forest" then
+                    Teleport(game:GetService("Workspace").Doors.ForestZone.CFrame)
+                end
+            end
+    })
+
+
+local Section = TabSix:AddSection({
+    Name = "COMBAT"
+})
+
+                
+TabSix:AddToggle({
+    Name = "Auto punch c0",
+    Default = false,
+    Callback = function(Value)
+            _G.c0 = Value
+        while _G.c0 and wait() do
+        -- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.RightHand
+}
+
+game:GetService("Players").LocalPlayer.Character.a_Punch.Combo.C0:FireServer(unpack(args))
+
+
+wait(0)
+end
+    end
+})
+
+TabSix:AddToggle({
+    Name = "Auto punch c1",
+    Default = false,
+    Callback = function(Value)
+            _G.c1 = Value
+        while _G.c1 and wait() do
+       -- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.LeftHand
+}
+
+game:GetService("Players").LocalPlayer.Character.a_Punch.Combo.C1:FireServer(unpack(args))
+
+wait(0)
+end
+    end
+})
+
+TabSix:AddToggle({
+    Name = "Auto slam c2",
+    Default = false,
+    Callback = function(Value)
+            _G.c2 = Value
+        while _G.c2 and wait() do
+    -- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.RightLowerLeg
+}
+
+game:GetService("Players").LocalPlayer.Character.b_Stomp.Combo.C2:FireServer(unpack(args))
+
+
+
+wait(0)
+end
+    end
+})
+
+TabSix:AddToggle({
+    Name = "Auto slam c3",
+    Default = false,
+    Callback = function(Value)
+            _G.c3 = Value
+        while _G.c3 and wait() do
+    -- Script generated by SimpleSpy - credits to exx#9394
+
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.LeftLowerLeg
+}
+
+game:GetService("Players").LocalPlayer.Character.b_Stomp.Combo.C3:FireServer(unpack(args))
+
+
+
+
+wait(0)
+end
+    end
+})
